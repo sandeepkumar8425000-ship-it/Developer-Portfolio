@@ -182,7 +182,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         let json = await response.json();
         if (response.status == 200) {
             formMsg.style.color = '#25d366';
-            formMsg.textContent = '✔ Signal Received! Details sent to your Gmail.';
+            formMsg.textContent = '✔ Thank you! Your message has been sent sucessfuly.';
             this.reset();
         } else {
             formMsg.style.color = 'var(--accent-pink)';
