@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Gupta | NovaWeb Studio // Next-Gen Web Architecture</title>
+    <meta name="description" content="Sandeep Gupta - Full Stack Developer & UI/UX Architect crafting futuristic, high-performance web applications.">
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Neural Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><i class="fa-solid fa-microchip"></i> Sandeep <span>Gupta</span></a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="btn"><i class="fa-solid fa-bolt"></i> Hire Me</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="cyber-badge">
+                <span class="pulse-dot"></span> SYSTEM ONLINE // NOVAWEB STUDIO
+            </div>
+            <h1>Next-Gen Websites That <span class="gradient-text">Scale Business</span></h1>
+            <h2>I am a <span id="typing"></span></h2>
+            <p>Architecting futuristic full-stack web applications, landing pages, and ecommerce platforms designed for ultimate speed, security, and conversion.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn"><i class="fa-solid fa-rocket"></i> Launch Project</a>
+                <a href="#portfolio" class="btn-outline"><i class="fa-solid fa-eye"></i> View Work</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="image2.png" alt="Futuristic Web Design Mockup">
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats reveal">
+        <div class="stats-grid">
+            <div class="glass-card stat-box">
+                <i class="fa-solid fa-code-commit stat-icon"></i>
+                <h2 class="counter" data-target="100">0</h2>
+                <p style="color: var(--text-muted)">Projects Deployed</p>
+            </div>
+            <div class="glass-card stat-box">
+                <i class="fa-solid fa-users-viewfinder stat-icon"></i>
+                <h2 class="counter" data-target="50">0</h2>
+                <p style="color: var(--text-muted)">Global Clients</p>
+            </div>
+            <div class="glass-card stat-box">
+                <i class="fa-solid fa-terminal stat-icon"></i>
+                <h2 class="counter" data-target="3">0</h2>
+                <p style="color: var(--text-muted)">Years Experience</p>
+            </div>
+            <div class="glass-card stat-box">
+                <i class="fa-solid fa-shield-halved stat-icon"></i>
+                <h2 class="counter" data-target="99">0</h2>
+                <p style="color: var(--text-muted)">% Client Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services reveal" id="services">
+        <div class="section-title">
+            <h2>Capabilities & <span class="gradient-text">Services</span></h2>
+            <p>Tailor-made web solutions backed by modern engineering standards.</p>
+        </div>
+
+        <div class="services-container">
+            <div class="glass-card service-card">
+                <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>Business Web Apps</h3>
+                <p>Enterprise-grade web portals customized for modern startups and corporate setups.</p>
+            </div>
+            <div class="glass-card service-card">
+                <div class="service-icon"><i class="fa-solid fa-id-card-clip"></i></div>
+                <h3>Portfolio Systems</h3>
+                <p>Ultra-slick personal websites equipped with modern glassmorphism UI & dark aesthetics.</p>
+            </div>
+            <div class="glass-card service-card">
+                <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <h3>E-Commerce Platforms</h3>
+                <p>Fast, high-conversion online stores integrated with secure checkout and inventory logic.</p>
+            </div>
+            <div class="glass-card service-card">
+                <div class="service-icon"><i class="fa-solid fa-fire"></i></div>
+                <h3>Landing Pages</h3>
+                <p>Targeted, hyper-optimized marketing landing pages built for max lead generation.</p>
+            </div>
+            <div class="glass-card service-card">
+                <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>UI/UX Redesign</h3>
+                <p>Upgrading legacy interfaces with responsive layouts and lightning-fast loading speeds.</p>
+            </div>
+            <div class="glass-card service-card">
+                <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                <h3>Continuous Care</h3>
+                <p>24/7 security monitoring, database backups, performance audits, and framework upgrades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio reveal" id="portfolio">
+        <div class="section-title">
+            <h2>Recent <span class="gradient-text">Deployments</span></h2>
+            <p>Explore some of our recent digital web applications.</p>
+        </div>
+
+        <div class="portfolio-container">
+            <div class="glass-card project-card">
+                <div class="project-img">
+                    <img src="image1.png" alt="Corporate Platform">
+                </div>
+                <h3>Corporate Business Hub</h3>
+                <p style="color:var(--text-muted); margin-bottom:1rem;">Responsive enterprise platform featuring multi-page routing and animated modules.</p>
+                <a href="#" class="btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+
+            <div class="glass-card project-card">
+                <div class="project-img">
+                    <img src="image3.png" alt="E-Commerce Storefront">
+                </div>
+                <h3>Cyber Storefront</h3>
+                <p style="color:var(--text-muted); margin-bottom:1rem;">Modern shopping portal featuring payment gateways and custom cart logic.</p>
+                <a href="#" class="btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+
+            <div class="glass-card project-card">
+                <div class="project-img">
+                    <img src="image4.png" alt="Developer Portfolio">
+                </div>
+                <h3>Developer Portfolio</h3>
+                <p style="color:var(--text-muted); margin-bottom:1rem;">Cyberpunk themed developer portfolio built with glassmorphic cards and interactive particle canvas.</p>
+                <a href="#" class="btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about reveal" id="about">
+        <div class="glass-card" style="display: flex; flex-wrap: wrap; gap: 3rem; align-items: center;">
+            <div style="flex: 1; min-width: 300px;">
+                <div class="cyber-badge"><i class="fa-solid fa-user-astronaut"></i> ARCHITECT PROFILE</div>
+                <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">About NovaWeb Studio</h2>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Founded by <strong>Sandeep Gupta</strong>, NovaWeb Studio crafts state-of-the-art digital experiences for ambitious brands globally.</p>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">We specialize in Full-Stack Web Development, modern UI/UX design architectures, and speed optimization techniques that guarantee high search rankings.</p>
+                <a href="#contact" class="btn"><i class="fa-solid fa-comments"></i> Initiate Contact</a>
+            </div>
+            <div style="flex: 0.8; min-width: 280px; text-align: center;">
+                <img src="image5.png" alt="Sandeep Gupta" style="width: 100%; max-width: 380px; border-radius: var(--radius-lg); filter: drop-shadow(0 0 20px rgba(0,243,255,0.2));">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing reveal" id="pricing">
+        <div class="section-title">
+            <h2>Flexible <span class="gradient-text">Plans</span></h2>
+            <p>Includes 6 months of free technical updates and priority support.</p>
+        </div>
+
+        <div class="pricing-container">
+            <div class="glass-card price-card">
+                <h3>Basic Cyber</h3>
+                <h2>₹9,999</h2>
+                <ul>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> 5 Page Custom Web App</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> Responsive Glassmorphism Design</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> Contact Form Integration</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> SEO Setup & Indexing</li>
+                </ul>
+                <a href="#contact" class="btn-outline">Select Basic</a>
+            </div>
+
+            <div class="glass-card price-card popular">
+                <div class="popular-badge">MOST POPULAR</div>
+                <h3>Standard Neon</h3>
+                <h2>₹19,999</h2>
+                <ul>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> Up to 10 Pages Custom Layout</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> Dynamic CMS Admin Panel</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> Advanced SEO Optimization</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> Performance Tuning</li>
+                </ul>
+                <a href="#contact" class="btn">Select Standard</a>
+            </div>
+
+            <div class="glass-card price-card">
+                <h3>Enterprise Quantum</h3>
+                <h2>₹39,999</h2>
+                <ul>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> Custom Full-Stack Web App</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> Secure Database & Analytics</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> E-Commerce Checkout Gateways</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-cyan)"></i> 24/7 Priority Support</li>
+                </ul>
+                <a href="#contact" class="btn-outline">Select Enterprise</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq reveal">
+        <div class="section-title">
+            <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="glass-card faq-item">
+                <details>
+                    <summary>What is the turnaround time for a custom web project? <i class="fa-solid fa-chevron-down"></i></summary>
+                    <p>Standard sites take 7 to 15 days depending on features, dynamic data requirements, and feedback cycles.</p>
+                </details>
+            </div>
+            <div class="glass-card faq-item">
+                <details>
+                    <summary>Do you assist with domain registration & cloud hosting? <i class="fa-solid fa-chevron-down"></i></summary>
+                    <p>Yes, we handle complete deployment including SSL encryption certificates, domain setup, and cloud hosting server configuration.</p>
+                </details>
+            </div>
+            <div class="glass-card faq-item">
+                <details>
+                    <summary>Are the web applications mobile friendly and SEO-ready? <i class="fa-solid fa-chevron-down"></i></summary>
+                    <p>Every single line of code is structured for mobile responsiveness, high speed scores, and search engine discoverability.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact reveal" id="contact">
+        <div class="section-title">
+            <h2>Initialize <span class="gradient-text">Transmission</span></h2>
+            <p>Send a direct inquiry for custom inquiries or project estimates.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="glass-card">
+                <h3>Direct Channels</h3>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Ready to build something extraordinary? Connect via email or phone.</p>
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fa-solid fa-paper-plane" style="color:var(--accent-cyan)"></i>
+                        <span>sandeepdeveloper@example.com</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fa-solid fa-phone-volume" style="color:var(--accent-cyan)"></i>
+                        <span>+91 72504 55465</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <!-- FORM IS UPDATED WITH name ATTRIBUTES -->
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="name" name="name" placeholder="Name or Organization" required>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Brief project overview..." required></textarea>
+                    <button type="submit" class="btn" style="width: 100%; justify-content: center;">
+                        <i class="fa-solid fa-paper-plane"></i> Send Signal
+                    </button>
+                    <p id="formMessage" style="margin-top: 1rem; text-align: center; font-weight: 600;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Buttons -->
+    <button id="topBtn" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <a href="https://wa.me/7250455465" id="whatsapp" target="_blank" aria-label="WhatsApp Channel"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="year"></span> NovaWeb Studio // Designed & Engineered by Sandeep Gupta</p>
+    </footer>
+
+    <!-- External JavaScript Link -->
+    <script src="script.js"></script>
+
+</body>
+</html>
